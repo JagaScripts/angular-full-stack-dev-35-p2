@@ -8,10 +8,10 @@
       <th class="col-4">Email</th>
       <th class="col-4">Mensaje</th>
     </tr>
-    <tr *ngFor="let item of correos">
-      <td>{{item.nombre}}</td>
-      <td>{{item.email}}</td>
-      <td>{{item.mensaje}}</td>
+    <tr *ngFor="let correo of correos">
+      <td>{{correo.nombre}}</td>
+      <td>{{correo.email}}</td>
+      <td>{{correo.mensaje}}</td>
     </tr>
   </table>
   </div>
