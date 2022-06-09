@@ -24,12 +24,13 @@ export class AppComponent {
       nombre: ['',Validators.required],
       email: ['', [Validators.required, Validators.email]],
       mensaje: ['', Validators.required],
-      preguntasecreta: ['', Validators.required],
+      preguntasecreta: ['', Validators.required]
     });
   }
 
   enviarCorreo() {
 
+    console.log(this.formReactive.valid);
     if(this.formReactive.valid){
 
       let auxCorreo = new Correo(this.correo.nombre,this.correo.email,this.correo.mensaje);
