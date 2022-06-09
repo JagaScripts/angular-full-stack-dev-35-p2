@@ -1,0 +1,17 @@
+<div align="center">
+
+  <h1>Listado clientes </h1>
+
+  <table class="table table-bordered text-center">
+    <tr>
+      <th class="col-4">Nombre</th>
+      <th class="col-4">Email</th>
+      <th class="col-4">Mensaje</th>
+    </tr>
+    <tr *ngFor="let item of correos">
+      <td>{{item.nombre}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.mensaje}}</td>
+    </tr>
+  </table>
+  </div>
